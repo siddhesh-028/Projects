@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create an account</title>
+    <style>
+    body {
+  background: linear-gradient(to top, #1ad1ff, #b93bff);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.card {
+  width: 420px;
+  background: linear-gradient(to top, #b93bff, #1ad1ff);
+
+  border-radius: 10px;
+  padding: 28px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitle {
+  color: #6b6b6b;
+}
+
+.flex {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.radio {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.radio label {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  background: transparent;
+}
+
+.btn.pri {
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.signin {
+  margin-top: 16px;
+  text-align: center;
+  color: #6b6b6b;
+}
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <form class="card">
+        <h1 class="title">Employee Registration</h1>
+
+        <div class="flex">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Username" />
+        </div>
+
+        <div class="flex">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" />
+        </div>
+
+        <div class="flex">
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" />
+        </div>
+
+        <div class="flex">
+          <label for="qualification">Qualification</label>
+          <select id="qualification" name="qualification" required>
+            <option value="highschool">BA</option>
+            <option value="bachelors">BCA</option>
+            <option value="masters">MAC</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend>Gender</legend>
+          <div class="radio">
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+          </div>
+        </fieldset>
+
+        <div class="flex">
+          <label for="destination">Current designation</label>
+          <input
+            id="destination"
+            name="destination"
+            type="text"
+            placeholder="Designation"
+          />
+        </div>
+
+        <div class="flex">
+          <label for="experience">Work experience</label>
+          <textarea
+            id="experience"
+            name="experience"
+            rows="3"
+            placeholder="Enter work experience"
+          ></textarea>
+        </div>
+
+        <div class="flex">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+
+        <div class="flex">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="btn pri">
+            <a  onclick="LoginFunction()">Submit</a>
+          </button>
+          <button type="button" class="btn">
+            <a onclick="window.location.href='Index.html'">Cancel</a>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script>
+        function LoginFunction() {
+            let confirmSave = confirm("Do you want to save the changes?");
+            if (!confirmSave) {
+                return;
+            }
+
+            alert("Your changes have been saved!");
+            window.location.href = "Employee Dashboard.html";
+        }
+        </script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #41e0ff 0%, #a267e7 50%, #fc82e7 100%);
+            background-repeat: no-repeat;
+        }
+        .header {
+            font-size: 38px;
+            font-family: Algerian, serif;
+            text-align: center;
+            color: #191919;
+            margin-top: 28px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .dashboard-box {
+            background: rgba(255,255,255,0.09);
+            width: 410px;
+            margin: 42px auto 0 auto;
+            padding: 36px 35px 28px 35px;
+            border-radius: 18px;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.19);
+        }
+        .row {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: baseline;
+        }
+        .label {
+            font-family: Algerian, serif;
+            color: #232323;
+            font-size: 18px;
+            min-width: 170px;
+        }
+        .value {
+            font-size: 17px;
+            color: #353535;
+            font-family: Arial, sans-serif;
+            margin-left: 8px;
+            border-bottom: 1px solid #7b7b7b;
+            flex: 1;
+            padding-bottom: 2px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 24px;
+        }
+        .buttons button {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 11px 28px;
+            margin: 0 12px;
+            border-radius: 8px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.21s;
+        }
+        #editBtn {
+            background: #17a7eb;
+        }
+        #backBtn {
+            background: #27b33c;
+        }
+        .buttons button:hover {
+            opacity: 0.91;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> DASHBOARD</div>
+    <div class="dashboard-box">
+        <div class="row">
+            <div class="label">NAME :</div>
+            <div class="value">Siddhesh</div>
+        </div>
+        <div class="row">
+            <div class="label">EMAIL :</div>
+            <div class="value">siddhesh@email.com</div>
+        </div>
+        <div class="row">
+            <div class="label">DATE OF BIRTH :</div>
+            <div class="value">26/04/2004</div>
+        </div>
+        <div class="row">
+            <div class="label">GENDER :</div>
+            <div class="value">Male</div>
+        </div>
+        <div class="row">
+            <div class="label">QUALIFICATION :</div>
+            <div class="value">B.Sc Computer Science</div>
+        </div>
+        <div class="row">
+            <div class="label">CURRENT YEAR :</div>
+            <div class="value">Second Year</div>
+        </div>
+        <div class="row">
+            <div class="label">COURSES :</div>
+            <div class="value">Python, C, Java</div>
+        </div>
+        <div class="row">
+            <div class="label">COLLEGE :</div>
+            <div class="value">Dr.Ambedkar College</div>
+        </div>
+        <div class="buttons">
+            <button id="editBtn"  onclick="window.location.href='Student Signup.html'">Edit</button>
+            <button id="backBtn"  onclick="window.location.href='Index.html'">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>
