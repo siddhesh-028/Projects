@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#41e0ff,#a267e7,#fc82e7);min-height:100vh;padding:20px;display:flex;justify-content:center;align-items:center;}
+.dashboard{width:100%;max-width:430px;background:rgba(255,255,255,0.18);padding:28px;border-radius:14px;box-shadow:0 8px 18px rgba(0,0,0,0.25);}
+h1{font-family:Algerian;color:#111;text-align:center;margin-bottom:26px;font-size:30px;}
+.row{display:flex;justify-content:space-between;margin-bottom:14px;color:#222;font-size:16px;}
+.label{font-family:Algerian;font-size:17px;}
+.value{border-bottom:1px solid #444;min-width:150px;text-align:right;font-weight:bold;}
+.buttons{margin-top:24px;display:flex;gap:16px;}
+button{flex:1;padding:12px;font-size:15px;font-weight:bold;border-radius:10px;border:none;color:#fff;cursor:pointer;}
+#edit{background:#007bff;} #back{background:#28b463;}
+</style>
+</head>
+<body>
+<div class="dashboard">
+<h1>Dashboard</h1>
+<div class="row"><span class="label">Name:</span><span class="value">Siddhesh</span></div>
+<div class="row"><span class="label">Email:</span><span class="value">test@email.com</span></div>
+<div class="row"><span class="label">DOB:</span><span class="value">26/04/2004</span></div>
+<div class="row"><span class="label">Gender:</span><span class="value">Male</span></div>
+<div class="row"><span class="label">Course:</span><span class="value">B.Sc CS</span></div>
+<div class="buttons"><button id="edit" onclick="window.location.href='Student Signup.html'">Edit</button><button id="back" onclick="window.location.href='Index.html'">Go Back</button></div>
+</div>
+</body>
+</html>
