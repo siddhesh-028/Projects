@@ -1,0 +1,37 @@
+<!DOCTYPE>
+ <html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Employee Account</title>
+<style>
+body{background:linear-gradient(135deg,#1ad1ff,#b93bff);min-height:100vh;margin:0;display:flex;justify-content:center;align-items:center;font-family:Arial;padding:15px;}
+.card{width:100%;max-width:430px;background:rgba(255,255,255,0.18);padding:26px;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,0.28);}
+h1{font-family:Algerian;font-size:28px;text-align:center;margin-bottom:16px;}
+.field{margin-top:14px;display:flex;flex-direction:column;font-weight:bold;}
+input,select,textarea{margin-top:6px;padding:12px;border:none;border-radius:8px;background:#ffffffd5;outline:none;}
+.radio-group{display:flex;gap:18px;margin-top:6px;}
+.buttons{margin-top:22px;display:flex;gap:10px;}
+button{flex:1;padding:12px;border-radius:10px;font-weight:bold;border:none;color:#fff;cursor:pointer;}
+#submit{background:#111;} #cancel{background:#d68910;}
+</style>
+</head>
+<body>
+<form class="card">
+<h1>Create Employee Account</h1>
+<div class="field"><label>Name</label><input placeholder="text"></div>
+<div class="field"><label>Email</label><input placeholder="email"></div>
+<div class="field"><label>Date of Birth</label><input placeholder="date"></div>
+<div class="field"><label>Qualification</label><><option>B.Sc CS</option><option>BCA</option><option>MCA</option></div>
+<div class="field"><label>Gender</label><div class="radio-group"><label><input placeholder="radio" name="e"> Male</label><label><input placeholder="radio" name="e"> Female</label></div></div>
+<div class="field"><label>Designation</label><input placeholder="text"></div>
+<div class="field"><label>Experience</label></div>
+<div class="field"><label>Username</label><input placeholder="text"></div>
+<div class="field"><label>Password</label><input placeholder="password"></div>
+<div class="buttons">
+  <button id=""> id="submit" placeholder="button" onclick="window.location.href='Employee Dashboard.html'">Create Account</butto>
+<button id="cancel" placeholder="button" onclick="window.location.href='Index.html'">Cancel</button></div>
+</form>
+</body>
+</html>

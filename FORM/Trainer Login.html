@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trainer Login</title>
+<style>
+body{background:linear-gradient(135deg,#00ffff,#a852d6,#e84393,#4a90e2);min-height:100vh;margin:0;display:flex;justify-content:center;align-items:center;font-family:Arial;padding:20px;}
+.login-box{width:100%;max-width:420px;background:rgba(255,255,255,0.18);padding:30px;border-radius:14px;text-align:center;}
+h1{font-family:Algerian;font-size:32px;color:#000;margin-bottom:28px;}
+.input-group{text-align:left;margin-bottom:18px;}
+label{font-family:Algerian;} input{width:100%;padding:13px;margin-top:6px;text-align:center;border:none;border-radius:10px;background:#ffffffd0;}
+.buttons{display:flex;gap:18px;margin-top:22px;}
+button{flex:1;padding:12px;border-radius:10px;font-weight:bold;border:none;color:#fff;cursor:pointer;}
+#login{background:#28b463;} #cancel{background:#d68910;}
+</style>
+</head>
+<body>
+<div class="login-box">
+<h1>Trainer Login</h1>
+<div class="input-group"><label>Username:</label><input placeholder="text"></div>
+<div class="input-group"><label>Password:</label><input placeholder="password"></div>
+<div class="buttons"><button id="login" onclick="window.location.href='Trainer Dashboard.html'">Login</button><button id="cancel" onclick="window.location.href='Index.html'">Cancel</button></div>
+</div>
+</body>
+</html>
